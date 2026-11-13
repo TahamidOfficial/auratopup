@@ -212,6 +212,28 @@ body{
   position:relative;
   z-index:1;
 }
+/* --- ঝাপসা ঠিক করার আসল কোড --- */
+.top-glass, .bottom-glass, .glass{
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  opacity: 1 !important;
+}
+.top-glass *, .bottom-glass *, .glass *{
+  color: #000000 !important;
+  text-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+#noticeBar{
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 800;
+  border: 2px solid #ff0000 !important;
+}
 </style>
 </head>
 <body>
@@ -272,11 +294,4 @@ body{
   let uidConfirmed=false;
   function showToast(m){ const t=document.getElementById('toast'); t.textContent=m; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
   function copyNum(){ navigator.clipboard.writeText('01864005433'); showToast('Number Copied'); }
-  function selectPack(el,name,price){ document.querySelectorAll('.pack').forEach(p=>p.classList.remove('selected')); el.classList.add('selected'); packName=name; packPrice=price; document.getElementById('selectedText').textContent='Selected: '+name+' - '+price+'৳'; }
-  function checkUID(){
-    const uid=document.getElementById('uid').value.trim();
-    if(!uid || uid.length<6){ showToast('সঠিক UID দাও!'); uidConfirmed=false; return; }
-    uidConfirmed=true;
-    document.getElementById('uidMsg').textContent='UID Confirmed!';
-    const c=document.getElementById('playerCard'); c.style.display='block';
-    c.innerHTML='UID: <b>'+uid+'</b><br><span>UID সফলভাবে সাবমি
+  function selectPack(el,nam
