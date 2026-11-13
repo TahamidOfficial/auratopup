@@ -6,91 +6,7 @@
 <title>AURA TOPUP - Free Fire Diamond</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',sans-serif;-webkit-tap-highlight-color:transparent}
-  /* ===== 1. ব্যাকগ্রাউন্ড - সাদা + আকাশি + হালকা সবুজ - FIXED ===== */
-body{
-  margin:0;
-  padding-top:76px;
-  padding-bottom:80px;
-  background: #000 url('wallpaper.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Hind Siliguri', sans-serif;
-}
-
-/* ===== একদম নিখুঁত LIQUID GLASS - কোনো ব্যালেন্স নাই ===== */
-.glass, .top-glass, .bottom-glass{
-  position: relative;
-  background: linear-gradient(135deg, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0.12) 30%, rgba(255,255,255,0.05) 60%, rgba(255,255,255,0.22) 100%) !important;
-  backdrop-filter: blur(28px) saturate(220%) contrast(1.1) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(220%) contrast(1.1) !important;
-  border: 1.2px solid rgba(255,255,255,0.65) !important;
-  border-radius: 28px !important;
-  box-shadow: 
-    inset 0 1.5px 1.5px rgba(255,255,255,0.9),
-    inset 0 -1px 1px rgba(255,255,255,0.25),
-    inset 1px 0 1px rgba(255,255,255,0.4),
-    0 20px 45px rgba(0,0,0,0.45) !important;
-  overflow: hidden;
-}
-
-/* উপরে চকচকে আলোর দাগ - এটাই আসল Liquid Glass */
-.glass::before, .top-glass::before, .bottom-glass::before{
-  content:"";
-  position:absolute;
-  top:0; left:0; right:0;
-  height:55%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0) );
-  border-radius: 28px 28px 50% 50%;
-  pointer-events:none;
-  z-index:0;
-}
-.glass > *, .top-glass > *, .bottom-glass > *{
-  position:relative;
-  z-index:1;
-}
-
-.top-glass{
-  position:fixed !important;
-  top:10px; left:12px; right:12px;
-  z-index:999 !important;
-  text-align:center;
-  font-weight:800;
-  padding:15px;
-  color:#fff;
-  text-shadow:0 1px 8px rgba(0,0,0,0.6);
-}
-.bottom-glass{
-  position:fixed !important;
-  bottom:10px; left:12px; right:12px;
-  z-index:999 !important;
-  text-align:center;
-  font-size:13px;
-  font-weight:600;
-  padding:13px;
-  color:#fff;
-  text-shadow:0 1px 8px rgba(0,0,0,0.6);
-}
-/* ===== 2. Liquid Glass - মোটা + পরিষ্কার + ঝাপসা না ===== */
-.card, .glass, .box, .step-box {
-  background: linear-gradient(135deg, rgba(255,255,255,0.75), rgba(255,255,255,0.45)) !important;
-
-  /* 18px না, মাত্র 8px - তাহলেই পরিষ্কার লাগবে */
-  backdrop-filter: blur(8px) saturate(160%) !important;
-  -webkit-backdrop-filter: blur(8px) saturate(160%) !important;
-
-  /* মোটা সাদা বর্ডার - ৩ নম্বর ছবির মতো */
-  border: 1.5px solid rgba(255,255,255,0.9) !important;
-  border-radius: 28px !important;
-
-  box-shadow: 
-    inset 0 1px 0 rgba(255,255,255,0.9),
-    inset 0 -1px 0 rgba(255,255,255,0.3),
-    0 15px 35px rgba(0,100,255,0.15) !important;
-}
-
-/* লেখা যাতে ঘোলা না লাগে */
-.card *, .glass * {
-  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
-}
+  body{color:#fff;padding:16px 16px 30px;background:radial-gradient(600px 300px at 50% 0%,#1e3a8a 0%,#0a0f1e 55%,#000 100%)}
   .wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
   .glass{background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.18);border-radius:24px;padding:18px}
   .top{display:flex;justify-content:space-between;align-items:center}
@@ -137,109 +53,10 @@ body{
   .modal .trx-show{background:#fef2f2;border:1px dashed #dc2626;border-radius:10px;padding:10px;font-weight:800;letter-spacing:1px;margin:10px 0}
   .modal button{width:100%;padding:13px;border:none;border-radius:12px;font-weight:900;margin-top:8px;cursor:pointer}
   .btn-retry{background:#dc2626;color:#fff}.btn-close{background:#f1f5f9;color:#334155}
-.top-glass{position:fixed;top:10px;left:12px;right:12px;z-index:999;text-align:center;font-weight:800;padding:14px;border-radius:22px;background:rgba(255,255,255,0.45);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.8)}
-.bottom-glass{position:fixed;bottom:10px;left:12px;right:12px;z-index:999;text-align:center;font-size:13px;font-weight:600;padding:13px;border-radius:22px;background:rgba(255,255,255,0.45);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.8)}
-.glass{background:linear-gradient(135deg,rgba(255,255,255,0.65),rgba(255,255,255,0.25))!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;border:1.5px solid rgba(255,255,255,0.9)!important}
-/* ===== REAL LIQUID GLASS - পাতলা + সাইডে জুম + শাইনি ===== */
-.glass, .top-glass, .bottom-glass{
-  position: relative;
-  background: rgba(255,255,255,0.07) !important;
-  backdrop-filter: blur(6px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(6px) saturate(180%) !important;
-  border: 1px solid rgba(255,255,255,0.45) !important;
-  border-radius: 28px !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.85),
-    inset 0 -0.5px 0 rgba(255,255,255,0.25),
-    inset 1px 0 0 rgba(255,255,255,0.35),
-    inset -1px 0 0 rgba(255,255,255,0.15),
-    0 12px 35px rgba(0,0,0,0.35) !important;
-  overflow: hidden;
-}
-
-/* সাইডে জুম / বাঁকা লাগার ইফেক্ট - Edge Lens */
-.glass::after, .top-glass::after, .bottom-glass::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius:28px;
-  padding:1px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, rgba(255,255,255,0.55) 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events:none;
-}
-
-/* রোদ পড়লে হালকা শাইনি - সূর্যের আলো */
-.glass::before, .top-glass::before, .bottom-glass::before{
-  content:"";
-  position:absolute;
-  top:0; left:8%; right:8%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.95), transparent);
-  filter: blur(0.5px);
-  pointer-events:none;
-  z-index:2;
-}
-
-.top-glass{
-  position:fixed !important;
-  top:10px; left:12px; right:12px;
-  z-index:999 !important;
-  text-align:center;
-  font-weight:800;
-  padding:14px;
-  color:#fff;
-  text-shadow:0 1px 6px rgba(0,0,0,0.7);
-  background: rgba(255,255,255,0.10) !important;
-}
-.bottom-glass{
-  position:fixed !important;
-  bottom:10px; left:12px; right:12px;
-  z-index:999 !important;
-  text-align:center;
-  font-size:13px;
-  font-weight:600;
-  padding:12px;
-  color:#fff;
-  text-shadow:0 1px 6px rgba(0,0,0,0.7);
-  background: rgba(255,255,255,0.10) !important;
-}
-
-/* লেখা যাতে কাঁচের নিচে না ঢুকে যায় */
-.glass > *, .top-glass > *, .bottom-glass > *{
-  position:relative;
-  z-index:1;
-}
-/* --- ঝাপসা ঠিক করার আসল কোড --- */
-.top-glass, .bottom-glass, .glass{
-  background: #ffffff !important;
-  background-color: #ffffff !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: 1px solid #e0e0e0 !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-  opacity: 1 !important;
-}
-.top-glass *, .bottom-glass *, .glass *{
-  color: #000000 !important;
-  text-shadow: none !important;
-  filter: none !important;
-  opacity: 1 !important;
-}
-#noticeBar{
-  background: #ffffff !important;
-  color: #000000 !important;
-  font-weight: 800;
-  border: 2px solid #ff0000 !important;
-}
 </style>
 </head>
 <body>
 <div class="wrap">
-<div class="top-glass" id="noticeBar">লোড হচ্ছে...</div>
-<div class="bottom-glass">©  AURA TOPUP BY CYBER TAHAMID • ALL RIGHTS RESERVED</div>
   <div class="glass top"><div class="brand"><div class="aura-logo"><img src="logo.png"></div><div><b>AURA TOPUP</b><br><span>TOP UP • DIAMOND</span><br><small>by CYBER TAHAMID</small></div></div><div style="font-size:18px">🔔</div></div>
   <div class="glass hero"><img class="ff-logo" src="ff.png"><img class="big-dia" src="dimond.png"><h1>Free Fire<br>Diamond Top Up</h1><p>সবচেয়ে কম দামে, সবচেয়ে ফাস্ট ডেলিভারি।<br>নিচে ৩টা স্টেপ ফলো করলেই ডায়মন্ড পাবা।</p></div>
   <div class="glass"><div class="title">STEP 1 • PLAYER UID</div><div class="input-box"><span style="font-size:12px;font-weight:900">UID</span><input id="uid" type="number" placeholder="Enter Free Fire UID"><button class="check-btn" onclick="checkUID()">UID SEND</button></div><p id="uidMsg" style="font-size:12px;margin-top:8px;opacity:.8">Example: 665951869</p><div class="player-card" id="playerCard"></div></div>
@@ -293,5 +110,43 @@ body{
   let packName='100 Diamond', packPrice='55';
   let uidConfirmed=false;
   function showToast(m){ const t=document.getElementById('toast'); t.textContent=m; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
-  function copyNum(){ navigator.clipboard.writeText('01864005433'); showToast('Number Copied'); }
-  function selectPack(el,nam
+  function copyNum(){ navigator.clipboard.writeText('01975185912'); showToast('Number Copied'); }
+  function selectPack(el,name,price){ document.querySelectorAll('.pack').forEach(p=>p.classList.remove('selected')); el.classList.add('selected'); packName=name; packPrice=price; document.getElementById('selectedText').textContent='Selected: '+name+' - '+price+'৳'; }
+  function checkUID(){
+    const uid=document.getElementById('uid').value.trim();
+    if(!uid || uid.length<6){ showToast('সঠিক UID দাও!'); uidConfirmed=false; return; }
+    uidConfirmed=true;
+    document.getElementById('uidMsg').textContent='UID Confirmed!';
+    const c=document.getElementById('playerCard'); c.style.display='block';
+    c.innerHTML='UID: <b>'+uid+'</b><br><span>UID সফলভাবে সাবমিট হয়েছে ✅</span>';
+    showToast('UID Confirmed: '+uid);
+  }
+  function isValidTrxID(trx){ return /^[A-Z0-9]{100000}$/.test(trx); }
+  function showFail(trx){ document.getElementById('failTrx').textContent='TrxID: '+trx; document.getElementById('failModal').classList.add('show'); }
+  function closeModal(){ document.getElementById('failModal').classList.remove('show'); document.getElementById('trx').focus(); }
+  function buyNow(){
+    const uid=document.getElementById('uid').value.trim();
+    const sender=document.getElementById('senderNum').value.trim();
+    const trx=document.getElementById('trx').value.trim().toUpperCase();
+    const trxInput=document.getElementById('trx');
+    if(!uid || uid.length<6){ showToast('আগে UID দাও!'); return; }
+    if(!uidConfirmed){ showToast('আগে UID SEND চাপো!'); return; }
+    if(!sender || sender.length<11){ showToast('যে নাম্বার থেকে টাকা পাঠাইছো ওইটা দাও!'); return; }
+    if(!trx){ showToast('আগে TrxID দাও!'); return; }
+    if(!isValidTrxID(trx)){
+      trxInput.classList.add('error');
+      showFail(trx);
+      return;
+    }
+    trxInput.classList.remove('error');
+    showToast('TrxID ঠিক আছে - Verifying...');
+    const btn=document.getElementById('buyBtn'); btn.textContent='Verifying...';
+    setTimeout(()=>{
+      btn.textContent='ORDER CONFIRM';
+      showToast('Order Pending - Admin Verify করবে');
+      alert('Order Pending!\n\nUID: '+uid+'\nPack: '+packName+' - '+packPrice+'৳\nTrxID: '+trx+'\n\nAdmin Verify করে Diamond পাঠাবে।');
+    },800);
+  }
+</script>
+</body>
+ </html>
