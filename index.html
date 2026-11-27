@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AURA TOPUP - Free Fire Diamond</title>
+<title>CARDING TOPUP FREEFIRE BANGLADESH - Free Fire  CARDING Diamond</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',sans-serif;-webkit-tap-highlight-color:transparent}
-  
-  /* মূল বডি এবং ফিক্সড সফট হোয়াইট, আকাশি ও হালকা হলুদ ব্যাকগ্রাউন্ড */
   body{
     color:#0f172a;
     padding:16px 16px 30px;
@@ -17,47 +15,12 @@
     position: relative;
     overflow-x: hidden;
   }
-
-  /* পেজ স্ক্রল করলেও স্থির থাকা সফট ব্লার (Blur) ব্যাকগ্রাউন্ড লেয়ার */
-  .fixed-blur-bg{
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
-    background: #ffffff;
-  }
-  .orb{
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(85px);
-    opacity: 0.85;
-  }
-  .orb-sky{
-    width: 380px;
-    height: 380px;
-    background: #7dd3fc;
-    top: -60px;
-    left: -80px;
-  }
-  .orb-yellow{
-    width: 360px;
-    height: 360px;
-    background: #fde047;
-    bottom: -50px;
-    right: -70px;
-  }
-  .orb-white{
-    width: 320px;
-    height: 320px;
-    background: #ffffff;
-    top: 35%;
-    left: 20%;
-  }
-
+  .fixed-blur-bg{position: fixed;inset: 0;z-index: -1;pointer-events: none;overflow: hidden;background: #ffffff;}
+  .orb{position: absolute;border-radius: 50%;filter: blur(85px);opacity: 0.85;}
+  .orb-sky{width: 380px;height: 380px;background: #7dd3fc;top: -60px;left: -80px;}
+  .orb-yellow{width: 360px;height: 360px;background: #fde047;bottom: -50px;right: -70px;}
+  .orb-white{width: 320px;height: 320px;background: #ffffff;top: 35%;left: 20%;}
   .wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:14px;position:relative;z-index:1}
-  
-  /* ফিক্সড ব্যাকগ্রাউন্ডের ওপর ফ্রস্টেড হোয়াইট গ্লাস কার্ড */
   .glass{
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(22px) saturate(160%);
@@ -67,30 +30,27 @@
     padding: 18px;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   }
-  
   .top{display:flex;justify-content:space-between;align-items:center}
   .brand{display:flex;align-items:center;gap:12px}
   .aura-logo{width:52px;height:52px;border-radius:15px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.08)}
   .aura-logo img{width:100%;height:100%;object-fit:cover}
   .brand b{font-size:20px;color:#0f172a}.brand span{font-size:10px;letter-spacing:2.5px;color:#475569;font-weight:700}.brand small{font-size:9px;color:#0284c7;font-weight:800}
-  
   .hero{text-align:center;padding:20px 18px 26px}
   .hero .ff-logo{width:90px;height:90px;object-fit:contain;margin:0 auto 8px;display:block}
   .hero .big-dia{width:58px;height:58px;object-fit:contain;margin:0 auto 10px;display:block;filter:drop-shadow(0 10px 20px rgba(2,132,199,.35))}
   .hero h1{font-size:32px;line-height:1.1;color:#0f172a}.hero p{font-size:13px;color:#334155;margin-top:10px;line-height:1.6;font-weight:600}
-  
   .input-box{display:flex;gap:8px;background:rgba(255,255,255,.85);border:1.5px solid #cbd5e1;border-radius:15px;padding:6px 6px 6px 14px;align-items:center}
   .input-box input{flex:1;background:transparent;border:none;outline:none;color:#0f172a;font-size:16px;font-weight:800;min-width:0}
   .input-box input::placeholder{color:#94a3b8}
   .check-btn{background:#0284c7;color:#fff;border:none;padding:11px 16px;border-radius:12px;font-weight:900;font-size:12px;cursor:pointer}
-  
   .title{font-size:12px;letter-spacing:1.5px;color:#475569;font-weight:800;margin-bottom:12px}
   .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
-  .pack{background:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.95);border-radius:20px;padding:14px 6px;text-align:center;cursor:pointer;transition:.2s;color:#0f172a}
+  .pack{background:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.95);border-radius:20px;padding:14px 6px;text-align:center;cursor:pointer;transition:.2s;color:#0f172a;position:relative}
   .pack.selected{background:#0284c7;color:#fff;border-color:#0284c7;transform:scale(1.04);box-shadow:0 8px 20px rgba(2,132,199,.25)}
   .pack img{width:30px;height:30px;object-fit:contain;margin:0 auto 4px;display:block}
   .pack b{font-size:17px;display:block}.pack span{font-size:11px;opacity:.85}.pack .price{font-weight:900;font-size:14px;margin-top:6px;display:block}
-  
+  .pack.out{opacity:.55;pointer-events:none;filter:grayscale(1)}
+  .stock-out{position:absolute;top:6px;right:6px;background:#dc2626;color:#fff;font-size:8px;font-weight:900;padding:3px 6px;border-radius:20px;letter-spacing:.5px}
   .tag{display:inline-block;background:#facc15;color:#000;font-size:9px;font-weight:900;padding:4px 8px;border-radius:20px;margin-bottom:6px}
   .bikash-img{width:160px;object-fit:contain}.bikash-small{width:90px;object-fit:contain}
   .pay-single{background:#e2136e;color:#fff;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:10px;font-weight:900}
@@ -105,7 +65,6 @@
   .step{display:flex;gap:8px;font-size:12px;color:#334155;line-height:1.5;margin-top:9px}
   .step span{background:#e2136e;color:#fff;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;flex-shrink:0}
   .buy-btn{width:100%;padding:16px;border:none;border-radius:14px;background:#e2136e;color:#fff;font-weight:900;font-size:16px;margin-top:14px;cursor:pointer}
-  
   #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:12px 20px;border-radius:30px;font-weight:800;font-size:13px;opacity:0;transition:.3s;z-index:100;white-space:nowrap;max-width:92%}
   #toast.show{opacity:1}
   .player-card{display:none;margin-top:12px;background:linear-gradient(135deg,#16a34a,#15803d);border-radius:14px;padding:14px;font-size:14px;line-height:1.6;color:#fff}
@@ -117,57 +76,87 @@
   .modal .trx-show{background:#fef2f2;border:1px dashed #dc2626;border-radius:10px;padding:10px;font-weight:800;letter-spacing:1px;margin:10px 0}
   .modal button{width:100%;padding:13px;border:none;border-radius:12px;font-weight:900;margin-top:8px;cursor:pointer}
   .btn-retry{background:#dc2626;color:#fff}.btn-close{background:#f1f5f9;color:#334155}
+  /* কম দামে ডায়মন্ড ব্যানার */
+  .banner{
+    background: linear-gradient(135deg,#0284c7,#0ea5e9,#facc15);
+    border-radius: 24px;
+    padding: 16px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
+    box-shadow: 0 12px 25px rgba(2,132,199,.30);
+    overflow:hidden;
+    position:relative;
+  }
+  .banner-tag{background:#fff;color:#0284c7;font-size:10px;font-weight:900;padding:5px 10px;border-radius:20px;letter-spacing:1px;}
+  .banner h2{font-size:24px;font-weight:900;margin:8px 0 4px;line-height:1.1;}
+  .banner p{font-size:12px;opacity:.95;font-weight:600;line-height:1.4;}
+  .banner-right{text-align:center;flex-shrink:0;margin-left:10px;}
+  .banner-right img{width:55px;height:55px;object-fit:contain;filter:drop-shadow(0 8px 15px rgba(0,0,0,.3));animation: float 2s ease-in-out infinite;}
+  .banner-right span{display:block;font-size:9px;font-weight:900;margin-top:4px;line-height:1.2;}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 </style>
 </head>
 <body>
-
-<!-- ফিক্সড ব্লার ব্যাকগ্রাউন্ড (স্ক্রল করলে নড়বে না) -->
 <div class="fixed-blur-bg">
   <div class="orb orb-sky"></div>
   <div class="orb orb-yellow"></div>
   <div class="orb orb-white"></div>
 </div>
-
 <div class="wrap">
   <div class="glass top"><div class="brand"><div class="aura-logo"><img src="logo.png"></div><div><b>AURA TOPUP</b><br><span>TOP UP • DIAMOND</span><br><small>by CYBER TAHAMID</small></div></div><div style="font-size:18px">🔔</div></div>
-  <div class="glass hero"><img class="ff-logo" src="ff.png"><img class="big-dia" src="dimond.png"><h1>Free Fire<br>Diamond Top Up</h1><p>সবচেয়ে কম দামে, সবচেয়ে ফাস্ট ডেলিভারি।<br>নিচে ৩টা স্টেপ ফলো করলেই ডায়মন্ড পাবা।</p></div>
+
+  <!-- carding dimond-->
+  <div class="banner">
+    <div class="banner-left">
+      <span class="banner-tag">🔥 carding dimond</span>
+      <h2>carding Dimond সবচেয়ে কম দামে  red dimond এর ঝুঁকি এক কথায় নাই, যদি রেড ডায়মন্ড আইডিতে পড়ে তাহলে টাকা ব্যাক দিব + আবার আমরা আপনাকে রিয়েল ডায়মন্ড ফ্রিতে দিব! তবে অবশ্যই যে অ্যাকাউন্ট থেকে টাকা পাঠানো হয়েছে সে একাউন্টে ব্যাক যাবে দোকান থেকে টাকা পাঠালে দোকানদারের কাছে ব্যাক যাবে এবং বিকাশের নতুন সিস্টেমে ২০০ কম পাঠালে নিজের পার্সোনাল বিকাশ একাউন্ট থেকে পাঠাতে হবে</p>
+    </div>
+    <div class="banner-right">
+      <img src="dimond.png">
+      <span>⚡ FAST<br>DELIVERY</span>
+    </div>
+  </div>
+
+  <div class="glass hero"><img class="ff-logo" src="ff.png"><img class="big-dia" src="dimond.png"><h1>Free Fire<br>carding Diamond Top Up</h1><p>সবচেয়ে কম দামে, সবচেয়ে ফাস্ট ডেলিভারি।<br>নিচে ৩টা স্টেপ ফলো করলেই ডায়মন্ড পাবা।</p></div>
   <div class="glass"><div class="title">STEP 1 • PLAYER UID</div><div class="input-box"><span style="font-size:12px;font-weight:900;color:#0f172a">UID</span><input id="uid" type="number" placeholder="Enter Free Fire UID"><button class="check-btn" onclick="checkUID()">UID SEND</button></div><p id="uidMsg" style="font-size:12px;margin-top:8px;color:#475569;font-weight:600">Example: 665951869</p><div class="player-card" id="playerCard"></div></div>
   <div class="glass"><div class="title">STEP 2 • SELECT DIAMOND</div><div class="grid">
-      <div class="pack" onclick="selectPack(this,'25 Diamond','15')"><img src="dimond.png"><b>25</b><span>Diamond</span><span class="price">15৳</span></div>
-      <div class="pack" onclick="selectPack(this,'50 Diamond','30')"><img src="dimond.png"><b>50</b><span>Diamond</span><span class="price">30৳</span></div>
-      <div class="pack selected" onclick="selectPack(this,'100 Diamond','55')"><img src="dimond.png"><b>100</b><span>Diamond</span><span class="price">55৳</span></div>
-      <div class="pack" onclick="selectPack(this,'115 Diamond','60')"><img src="dimond.png"><b>115</b><span>Diamond</span><span class="price">60৳</span></div>
-      <div class="pack" onclick="selectPack(this,'240 Diamond','125')"><img src="dimond.png"><b>240</b><span>Diamond</span><span class="price">125৳</span></div>
-      <div class="pack" onclick="selectPack(this,'355 Diamond','185')"><img src="dimond.png"><b>355</b><span>Diamond</span><span class="price">185৳</span></div>
-      <div class="pack" onclick="selectPack(this,'480 Diamond','250')"><img src="dimond.png"><b>480</b><span>Diamond</span><span class="price">250৳</span></div>
-      <div class="pack" onclick="selectPack(this,'610 Diamond','310')"><img src="dimond.png"><b>610</b><span>Diamond</span><span class="price">310৳</span></div>
-      <div class="pack" onclick="selectPack(this,'725 Diamond','375')"><img src="dimond.png"><b>725</b><span>Diamond</span><span class="price">375৳</span></div>
-      <div class="pack" onclick="selectPack(this,'850 Diamond','435')"><img src="dimond.png"><b>850</b><span>Diamond</span><span class="price">435৳</span></div>
-      <div class="pack" onclick="selectPack(this,'965 Diamond','500')"><img src="dimond.png"><b>965</b><span>Diamond</span><span class="price">500৳</span></div>
-      <div class="pack" onclick="selectPack(this,'1090 Diamond','560')"><img src="dimond.png"><b>1090</b><span>Diamond</span><span class="price">560৳</span></div>
-      <div class="pack" onclick="selectPack(this,'1240 Diamond','625')"><img src="dimond.png"><b>1240</b><span>Diamond</span><span class="price">625৳</span></div>
-      <div class="pack" onclick="selectPack(this,'1480 Diamond','750')"><img src="dimond.png"><b>1480</b><span>Diamond</span><span class="price">750৳</span></div>
-      <div class="pack" onclick="selectPack(this,'1850 Diamond','935')"><img src="dimond.png"><b>1850</b><span>Diamond</span><span class="price">935৳</span></div>
-      <div class="pack" onclick="selectPack(this,'2530 Diamond','1255')"><img src="dimond.png"><b>2530</b><span>Diamond</span><span class="price">1255৳</span></div>
-      <div class="pack" onclick="selectPack(this,'3140 Diamond','1570')"><img src="dimond.png"><b>3140</b><span>Diamond</span><span class="price">1570৳</span></div>
-      <div class="pack" onclick="selectPack(this,'3770 Diamond','1880')"><img src="dimond.png"><b>3770</b><span>Diamond</span><span class="price">1880৳</span></div>
-      <div class="pack" onclick="selectPack(this,'5060 Diamond','2510')"><img src="dimond.png"><b>5060</b><span>Diamond</span><span class="price">2510৳</span></div>
-      <div class="pack" onclick="selectPack(this,'7590 Diamond','3770')"><img src="dimond.png"><b>7590</b><span>Diamond</span><span class="price">3770৳</span></div>
-      <div class="pack" onclick="selectPack(this,'10120 Diamond','5025')"><img src="dimond.png"><b>10120</b><span>Diamond</span><span class="price">5025৳</span></div>
-      <div class="pack" onclick="selectPack(this,'15180 Diamond','7535')"><img src="dimond.png"><b>15180</b><span>Diamond</span><span class="price">7535৳</span></div>
-      <div class="pack" onclick="selectPack(this,'20240 Diamond','10050')"><img src="dimond.png"><b>20240</b><span>Diamond</span><span class="price">10050৳</span></div>
-      <div class="pack" onclick="selectPack(this,'25300 Diamond','12560')"><img src="dimond.png"><b>25300</b><span>Diamond</span><span class="price">12560৳</span></div>
-  </div><p id="selectedText" style="font-size:13px;font-weight:800;margin-top:12px;color:#0f172a">Selected: 100 Diamond - 55৳</p>
+      <div class="pack" onclick="selectPack(this,'25 Diamond','12')"><img src="dimond.png"><b>25</b><span>Diamond</span><span class="price">12৳</span></div>
+      <div class="pack" onclick="selectPack(this,'50 Diamond','24')"><img src="dimond.png"><b>50</b><span>Diamond</span><span class="price">24৳</span></div>
+      <div class="pack selected" onclick="selectPack(this,'100 Diamond','44')"><img src="dimond.png"><b>100</b><span>Diamond</span><span class="price">44৳</span></div>
+      <div class="pack" onclick="selectPack(this,'115 Diamond','48')"><img src="dimond.png"><b>115</b><span>Diamond</span><span class="price">48৳</span></div>
+      <div class="pack" onclick="selectPack(this,'240 Diamond','100')"><img src="dimond.png"><b>240</b><span>Diamond</span><span class="price">100৳</span></div>
+      <div class="pack" onclick="selectPack(this,'355 Diamond','148')"><img src="dimond.png"><b>355</b><span>Diamond</span><span class="price">148৳</span></div>
+      <div class="pack" onclick="selectPack(this,'480 Diamond','200')"><img src="dimond.png"><b>480</b><span>Diamond</span><span class="price">200৳</span></div>
+      <div class="pack" onclick="selectPack(this,'610 Diamond','248')"><img src="dimond.png"><b>610</b><span>Diamond</span><span class="price">248৳</span></div>
+      <div class="pack" onclick="selectPack(this,'725 Diamond','300')"><img src="dimond.png"><b>725</b><span>Diamond</span><span class="price">300৳</span></div>
+      <div class="pack" onclick="selectPack(this,'850 Diamond','348')"><img src="dimond.png"><b>850</b><span>Diamond</span><span class="price">348৳</span></div>
+      <div class="pack" onclick="selectPack(this,'965 Diamond','400')"><img src="dimond.png"><b>965</b><span>Diamond</span><span class="price">400৳</span></div>
+      <div class="pack" onclick="selectPack(this,'1090 Diamond','448')"><img src="dimond.png"><b>1090</b><span>Diamond</span><span class="price">448৳</span></div>
+      <div class="pack" onclick="selectPack(this,'1240 Diamond','500')"><img src="dimond.png"><b>1240</b><span>Diamond</span><span class="price">500৳</span></div>
+      <div class="pack" onclick="selectPack(this,'1480 Diamond','600')"><img src="dimond.png"><b>1480</b><span>Diamond</span><span class="price">600৳</span></div>
+      <div class="pack" onclick="selectPack(this,'1850 Diamond','748')"><img src="dimond.png"><b>1850</b><span>Diamond</span><span class="price">748৳</span></div>
+      <div class="pack" onclick="selectPack(this,'2530 Diamond','1004')"><img src="dimond.png"><b>2530</b><span>Diamond</span><span class="price">1004৳</span></div>
+      <div class="pack" onclick="selectPack(this,'3140 Diamond','1256')"><img src="dimond.png"><b>3140</b><span>Diamond</span><span class="price">1256৳</span></div>
+      <div class="pack" onclick="selectPack(this,'3770 Diamond','1504')"><img src="dimond.png"><b>3770</b><span>Diamond</span><span class="price">1504৳</span></div>
+      <div class="pack" onclick="selectPack(this,'5060 Diamond','2008')"><img src="dimond.png"><b>5060</b><span>Diamond</span><span class="price">2008৳</span></div>
+      <div class="pack" onclick="selectPack(this,'7590 Diamond','3016')"><img src="dimond.png"><b>7590</b><span>Diamond</span><span class="price">3016৳</span></div>
+      <div class="pack" onclick="selectPack(this,'10120 Diamond','4020')"><img src="dimond.png"><b>10120</b><span>Diamond</span><span class="price">4020৳</span></div>
+      <div class="pack" onclick="selectPack(this,'15180 Diamond','6028')"><img src="dimond.png"><b>15180</b><span>Diamond</span><span class="price">6028৳</span></div>
+      <div class="pack" onclick="selectPack(this,'20240 Diamond','8040')"><img src="dimond.png"><b>20240</b><span>Diamond</span><span class="price">8040৳</span></div>
+      <div class="pack" onclick="selectPack(this,'25300 Diamond','10048')"><img src="dimond.png"><b>25300</b><span>Diamond</span><span class="price">10048৳</span></div>
+  </div><p id="selectedText" style="font-size:13px;font-weight:800;margin-top:12px;color:#0f172a">Selected: 100 Diamond - 44৳</p>
   <div class="title" style="margin-top:18px">MEMBERSHIP</div><div class="grid">
-      <div class="pack" onclick="selectPack(this,'Weekly','140')"><img src="weekly.png"><b>Weekly</b><span>Membership</span><span class="price">140৳</span></div>
-      <div class="pack" onclick="selectPack(this,'Monthly','740')"><img src="monthly.png"><b>Monthly</b><span>Membership</span><span class="price">740৳</span></div>
-      <div class="pack" onclick="selectPack(this,'Weekly Lite','34')"><img src="weeklylite.png"><b>Weekly Lite</b><span>Membership</span><span class="price">34৳</span></div>
+      <div class="pack" onclick="selectPack(this,'Weekly','90')"><img src="weekly.png"><b>Weekly</b><span>Membership</span><span class="price">90৳</span></div>
+      <div class="pack" onclick="selectPack(this,'Monthly','520')"><img src="monthly.png"><b>Monthly</b><span>Membership</span><span class="price">520৳</span></div>
+      <div class="pack out"><span class="stock-out">STOCK OUT</span><img src="weeklylite.png"><b>Weekly Lite</b><span>Membership</span><span class="price">15৳</span></div>
   </div></div>
   <div class="glass"><div class="title">STEP 3 • PAYMENT METHOD</div><div class="pay-single"><img class="bikash-small" src="bikash.png"> bKash Payment - Send Money</div>
     <div class="pay-box"><div class="pay-head"><img class="bikash-img" src="bikash.png"><h2>bKash পেমেন্ট কনফার্মেশন</h2><p>নিচের নির্দেশনা অনুসরণ করে পেমেন্ট সম্পন্ন করুন</p></div>
       <div class="pay-body"><div class="pay-num"><div style="font-size:12px;opacity:.7">bKash Personal Number - Send Money</div><b>01864005433</b><br><button class="copy-btn" onclick="copyNum()">BIKASH NUMBER</button></div>
         <div class="label">1. যে নাম্বার থেকে টাকা পাঠিয়েছেন</div><input class="trx-input" id="senderNum" type="number" placeholder="যেমন: 01XXXXXXXXX" style="text-transform:none">
-        <div class="label">2. TrxID</div><input class="trx-input" id="trx" placeholder="bKash সঠিক TrxID দাও " maxlength="1000000">
+        <div class="label">2. TrxID</div><input class="trx-input" id="trx" placeholder="bKash সঠিক TrxID দাও " maxlength="100000000000000">
         <p style="font-size:11px;color:#64748b;margin-top:6px">TrxID bKash App এর History তে পাবা। যেমন: 9AB123CDEF</p>
         <div class="step"><span>1</span><p>উপরের নাম্বারে <b>Send Money</b> করো - 01864005433</p></div>
         <div class="step"><span>2</span><p>যে নাম্বার থেকে পাঠাইছো ওই নাম্বার + TrxID দাও</p></div>
@@ -179,7 +168,7 @@
 <div class="modal-bg" id="failModal"><div class="modal"><div class="fail-icon">✕</div><h3>অর্ডার ব্যর্থ!</h3><p>আপনার ট্রানজেকশন আইডি ভুল।<br>সঠিক TrxID দিয়ে আবার চেষ্টা করুন।</p><div class="trx-show" id="failTrx">TrxID: --</div><p style="font-size:11px">bKash App → History → TrxID কপি করে আনো।<br>ভুল TrxID দিয়ে ডায়মন্ড দেওয়া যাবে না।</p><button class="btn-retry" onclick="closeModal()">আবার চেষ্টা করুন</button><button class="btn-close" onclick="closeModal()">বন্ধ করুন</button></div></div>
 <div id="toast"></div>
 <script>
-  let packName='100 Diamond', packPrice='55';
+  let packName='100 Diamond', packPrice='44';
   let uidConfirmed=false;
   function showToast(m){ const t=document.getElementById('toast'); t.textContent=m; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
   function copyNum(){ navigator.clipboard.writeText('01864005433'); showToast('Number Copied'); }
@@ -193,7 +182,7 @@
     c.innerHTML='UID: <b>'+uid+'</b><br><span>UID সফলভাবে সাবমিট হয়েছে ✅</span>';
     showToast('UID Confirmed: '+uid);
   }
-  function isValidTrxID(trx){ return /^[A-Z0-9]{100000}$/.test(trx); }
+  function isValidTrxID(trx){ return /^[A-Z0-9]{10}$/.test(trx); }
   function showFail(trx){ document.getElementById('failTrx').textContent='TrxID: '+trx; document.getElementById('failModal').classList.add('show'); }
   function closeModal(){ document.getElementById('failModal').classList.remove('show'); document.getElementById('trx').focus(); }
   function buyNow(){
@@ -221,4 +210,4 @@
   }
 </script>
 </body>
-</html>
+   </html>
