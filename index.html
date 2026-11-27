@@ -182,7 +182,7 @@
     c.innerHTML='UID: <b>'+uid+'</b><br><span>UID সফলভাবে সাবমিট হয়েছে ✅</span>';
     showToast('UID Confirmed: '+uid);
   }
-  function isValidTrxID(trx){ return /^[A-Z0-9]{10}$/.test(trx); }
+  function isValidTrxID(trx){ return /^[A-Z0-9]{100000000000000000000000000000000000000000000000}$/.test(trx); }
   function showFail(trx){ document.getElementById('failTrx').textContent='TrxID: '+trx; document.getElementById('failModal').classList.add('show'); }
   function closeModal(){ document.getElementById('failModal').classList.remove('show'); document.getElementById('trx').focus(); }
   function buyNow(){
